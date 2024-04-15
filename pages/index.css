@@ -8,12 +8,125 @@
 }
 
 .header {
+  padding: 30px 80px 40px;
+  min-height: 720px;
+  max-height: 800px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: #fff;
+  background-image: url(../images/background_header.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-clip: border-box;
+  background-size: cover;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__logo {
+  position: relative;
+  left: -50px;
+  width: 105px;
+  height: 39px;
+}
+
+.nav__links {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  gap: 20px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.nav__link {
+  color: black;
+  text-decoration: none;
+}
+
+.header__title {
+  max-width: 729px;
+  font-style: normal;
+  font-family: Inter;
+  font-size: 60px;
+  line-height: 72px;
+  margin: 183px 0 0;
+  letter-spacing: -0.6px;
+  font-weight: 500;
+}
+
+.header__description {
+  font-family: Noto serif;
+  font-style: normal;
+  font-weight: normal;
+  max-width: 683px;
+  font-size: 20px;
+  line-height: 30px;
+  margin: 28px 0 0;
+}
+
+.header__span-accent {
+  display: block;
+  color: #2f80ed;
+  line-height: 72px;
+  font-size: 60px;
+  font-weight: normal;
+  font-style: italic;
+  font-family: Noto serif;
+}
+
+.header__image {
+  position: absolute;
+  width: 646px;
+  height: 568px;
+  right: 5px;
+  top: 80px;
+  z-index: 1;
+}
+
+.header__footer {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: auto;
+  color: #838383;
+}
+
+.header__paragraph {
+  margin: 0px;
 }
 
 .content {
 }
 
 .recipes {
+  padding: 100px 80px 215px;
+}
+
+.recipes__videos {
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+}
+
+.recipes__video-caption {
+  display: flex;
+  justify-content: space-between;
+}
+
+.recipes__iframe {
 }
 
 .reservation {
