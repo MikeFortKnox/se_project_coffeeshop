@@ -27,10 +27,10 @@
             class="nav__logo"
           />
           <ul class="nav__links">
-            <li><a href="" class="nav__link">Recipes</a></li>
-            <li><a href="" class="nav__link">Book a table</a></li>
-            <li><a href="" class="nav__link">Menu</a></li>
-            <li><a href="" class="nav__link">Contacts</a></li>
+            <li><a href="#recipes" class="nav__link">Recipes</a></li>
+            <li><a href="book-a-table" class="nav__link">Book a table</a></li>
+            <li><a href="#menu" class="nav__link">Menu</a></li>
+            <li><a href="#contacts" class="nav__link">Contacts</a></li>
           </ul>
         </nav>
         <h1 class="header__title">
@@ -58,7 +58,7 @@
         </div>
       </header>
       <main class="content">
-        <section class="recipes">
+        <section class="recipes" id="recipes">
           <h2 class="recipes__title">Recipes</h2>
           <p class="recipes__subtitle">
             Check out some recipes we've collected for your home-brewing
@@ -67,9 +67,13 @@
           <div class="recipes__videos">
             <div>
               <iframe
-                src="https://www.youtube.com/watch?v=j6VlT_jUVPc"
+                class="recipe__video"
+                src="https://www.youtube.com/embed/j6VlT_jUVPc?si=UzxJGIfAUqTb5ZHW"
+                title="YouTube video player"
                 frameborder="0"
-                class="recipes__iframe"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
               ></iframe>
               <p class="recipes__video-caption">
                 <span>Aeropress recipe</span> ~5 min
@@ -77,9 +81,13 @@
             </div>
             <div>
               <iframe
-                src="https://www.youtube.com/watch?v=st571DYYTR8"
+                class="recipe__video"
+                src="https://www.youtube.com/embed/st571DYYTR8?si=FwOwF8HPYMe4xFs3"
+                title="YouTube video player"
                 frameborder="0"
-                class="recipes__iframe"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
               ></iframe>
               <p class="recipes__video-caption">
                 <span>French press recipe</span> ~15 min
@@ -87,9 +95,10 @@
             </div>
           </div>
         </section>
-        <section class="reservation"></section>
-        <section class="menu"></section>
-        <section class="about"></section>
+        <section class="reservation" id="book-a-table"></section>
+        <section class="menu" id="menu"></section>
+        <section class="contacts" id="contacts"></section>
+        <section class="about" id="about"></section>
       </main>
       <footer class="footer"></footer>
     </div>
