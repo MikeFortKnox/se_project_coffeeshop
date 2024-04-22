@@ -1,182 +1,23 @@
-.page {
-  min-width: 1100px;
-  max-width: 1600px;
-  margin: 0 auto;
-  font-family: Inter, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-}
-
-.header {
-  padding: 30px 80px 40px;
-  min-height: 720px;
-  max-height: 800px;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  background-color: #fff;
-  background-image: url(../images/background_header.svg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.nav {
-  display: flex;
-  justify-content: space-between;
-}
-
-.nav__logo {
-  position: relative;
-  left: -50px;
-  width: 105px;
-  height: 39px;
-}
-
-.nav__links {
-  display: flex;
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-  gap: 20px;
-  font-family: Inter;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-}
-
-.nav__link {
-  color: black;
-  text-decoration: none;
-}
-
-.header__title {
-  max-width: 729px;
-  font-style: normal;
-  font-family: Inter;
-  font-size: 60px;
-  line-height: 72px;
-  margin: 183px 0 0;
-  letter-spacing: -0.6px;
-  font-weight: 500;
-}
-
-.header__description {
-  font-family: Noto serif;
-  font-style: normal;
-  font-weight: normal;
-  max-width: 683px;
-  font-size: 20px;
-  line-height: 30px;
-  margin: 28px 0 0;
-}
-
-.header__span-accent {
-  display: block;
-  color: #2f80ed;
-  line-height: 72px;
-  font-size: 60px;
-  font-weight: normal;
-  font-style: italic;
-  font-family: Noto serif;
-}
-
-.header__image {
-  position: absolute;
-  width: 646px;
-  height: 568px;
-  right: 5px;
-  top: 124px;
-}
-
-.header__footer {
-  font-family: Inter;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  margin-top: auto;
-  color: #6f6f6f;
-}
-
-.header__paragraph {
-  margin: 0px;
-}
-
+@import url(../blocks/page.css);
+@import url(../blocks/header.css);
+@import url(../blocks/nav.css);
+@import url(../blocks/recipes.css);
+@import url(../blocks/reservation.css);
+@import url(../blocks/form.css);
 .content {
 }
 
-.recipes {
-  padding: 100px 80px 215px;
-  background-image: url(../images/background_recipes.svg);
-  background-color: #0a2750;
+.menu {
+  padding: 100px 0 100px;
+  background-image: url(../images/background_menu.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
-.recipes__title {
-  font-family: Inter;
-  font-style: normal;
-  color: #fff;
-  margin-right: 80px;
-  margin-bottom: 100px;
-  max-width: 580px;
-  font-size: 44px;
-  line-height: 52px;
-  font-weight: 500;
-}
-
-.recipes__videos {
-  color: #fff;
-  font-family: Inter;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 30px;
-  display: flex;
-  gap: 100px;
-  justify-content: center;
-}
-
-.recipes__subtitle {
-  color: #fff;
-  font-family: Noto serif;
-  font-style: normal;
-  margin-bottom: 80px;
-  margin-top: 24px;
-  font-weight: normal;
-  max-width: 438px;
-  font-size: 20px;
-  line-height: 30px;
-}
-
-.recipes__video-caption {
-  display: flex;
-  justify-content: space-between;
-}
-
-.recipes__iframe {
-  width: 560px;
-  height: 315px;
-}
-
-.reservation {
-  padding: 100px 0 120px;
-  background-image: url(../images/background_reservation.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-color: #d9e7ff;
-}
-
-.reservation__title {
-  margin: 0 0 80px;
+.menu__title {
   text-align: center;
+  margin: 0 0 24px;
   font-family: Inter;
   font-style: normal;
   font-weight: 500;
@@ -184,79 +25,96 @@
   line-height: 52px;
 }
 
-.form {
-  max-width: 385px;
+.menu__subtitle {
+  text-align: center;
+  margin: 0 0 100px;
+  font-family: Noto Serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
 }
 
-.form__fieldset {
+.menu__cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 100px;
   padding: 0;
   margin: 0;
-  border: none;
-  font-family: Inter;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
+  list-style-type: none;
 }
 
-.form__label {
-  margin-bottom: 32px;
-  display: block;
+.card {
+  width: 540px;
 }
 
-.form__label_type_checkbox {
-  display: flex;
-  justify-content: center;
-  gap: 12px;
-  margin-top: 32px;
-  border-radius: 2px;
-}
-
-.form__input {
-  display: block;
-  width: 100%;
+.card__list {
   padding: 0;
-  box-sizing: border-box;
-  margin-top: 8px;
-  height: 60px;
-  border-radius: 4px;
-  font-family: Inter;
+  margin: 0;
+  list-style-type: none;
+  flex-direction: column;
+  gap: 16px;
+  font-family: Noto Serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 20px;
-  line-height: 30px;
-  color: #838383;
-  padding-left: 10px;
-}
-
-.form__button {
-  width: 100%;
-  padding: 0;
-  margin-bottom: 32px;
-  height: 60px;
-  font-family: Inter;
-  font-style: normal;
-  font-weight: 500;
   font-size: 16px;
   line-height: 20px;
-  background-color: #2f80ed;
-  color: #fff;
-  cursor: pointer;
-  transition: opacity 0.3s ease;
 }
 
-.form__button:hover {
-  opacity: 70%;
+.card__title {
+  margin: 0 0 32px;
+  font-style: normal;
+  font-family: Inter;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 30px;
 }
 
-.reservation__form {
-  margin: 0 auto;
+.card__list-item {
+  display: flex;
 }
 
-.menu {
+.card__list-divider {
+  border-bottom: 1px solid black;
+  flex-grow: 1;
 }
 
 .about {
+  background-color: #0a2850;
+  color: white;
+  position: relative;
+}
+
+.about__title {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 44px;
+  line-height: 52px;
+}
+
+.about__content {
+}
+
+.about__paragraph {
+  font-family: Noto Serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.about__circle {
+  width: 426px;
+  height: 426px;
+  border-radius: 50%;
+  background-color: rgb(0, 119, 255);
+  position: absolute;
+  top: 152px;
+  left: 129px;
+  transform: translate(-152px, -129px);
+  z-index: 0;
 }
 
 .footer {
