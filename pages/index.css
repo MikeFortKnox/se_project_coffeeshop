@@ -91,7 +91,7 @@
 .about__title {
   font-family: Inter;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 500;
   font-size: 44px;
   line-height: 52px;
   z-index: 1;
@@ -126,4 +126,65 @@
 }
 
 .footer {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #000;
+  text-decoration: none;
+  line-height: 20px;
+  padding: 60px 80px 0;
+  background: linear-gradient(100deg, #0a2850 0%, #071931 100%);
+}
+
+.footer__contents {
+  margin: 0 0 108px;
+  display: flex;
+}
+
+.footer__logo {
+  max-width: 105px;
+  min-height: 39px;
+}
+
+.footer__social-heading {
+  margin: 0;
+  font-family: Inter;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  line-height: 20px;
+}
+
+.footer__social-link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer__social-link:hover {
+  color: #ccc;
+}
+
+.footer__content {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+}
+
+.footer__list {
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.footer__list-item {
+  text-align: center;
+  display: flex;
+  list-style-type: none;
+  margin: 20px 0 16px;
+  padding: 0;
+}
+
+.footer__copyright {
+  color: #fff;
 }
