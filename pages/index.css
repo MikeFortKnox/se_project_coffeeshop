@@ -23,6 +23,9 @@
   font-weight: 500;
   font-size: 44px;
   line-height: 52px;
+  max-width: 780px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .menu__subtitle {
@@ -33,9 +36,9 @@
   font-weight: normal;
   font-size: 20px;
   line-height: 30px;
-  position: relative;
-  display: flex;
-  flex-direction: column;
+  max-width: 780px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .menu__cards {
@@ -76,6 +79,8 @@
 
 .card__list-item {
   display: flex;
+  margin-bottom: 16px;
+  padding-bottom: 16px;
 }
 
 .card__list-divider {
@@ -89,6 +94,7 @@
   position: relative;
   overflow: hidden;
   display: flex;
+  padding: 119px 0 173px;
 }
 
 .about__title {
@@ -116,6 +122,8 @@
   font-size: 20px;
   line-height: 30px;
   text-wrap: balance;
+  margin-left: 20px;
+  margin-right: 80px;
 }
 
 .about__circle {
