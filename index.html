@@ -7,7 +7,6 @@
     <meta name="author" content="Mike Knox" />
     <meta name="keywords" content="HTML, CSS" />
     <link rel="stylesheet" href="pages/index.css" />
-    <link rel="stylesheet" href="vendor/normalize.css" />
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <title>Coffee Shop</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -101,6 +100,7 @@
               <label for="name" class="form__label">
                 Name *<input
                   type="text"
+                  required
                   id="name"
                   name="name"
                   class="form__input"
@@ -110,6 +110,7 @@
               <label for="guests" class="form__label">
                 Number of guests *<input
                   type="number"
+                  required
                   id="guests"
                   name="guests"
                   class="form__input"
@@ -122,6 +123,7 @@
                 Date & time *
                 <input
                   type="datetime-local"
+                  required
                   id="date"
                   name="date"
                   class="form__input"
@@ -131,6 +133,7 @@
                 Your email *
                 <input
                   type="email"
+                  required
                   id="email"
                   name="email"
                   class="form__input"
@@ -142,6 +145,7 @@
             <label for="check" class="form__label form__label_type_checkbox">
               <input
                 type="checkbox"
+                required
                 id="check"
                 name="check"
                 class="form__checkbox"
@@ -258,23 +262,27 @@
             <h3 class="footer__social-heading">Social Media</h3>
             <ul class="footer__list">
               <li class="footer__list-item">
-                <img
-                  src="./images/facebook_white.svg"
-                  alt="Facebook Logo"
-                  class="footer__social-icon"
-                />
-                <a href="#" class="footer__social-link" id="footer__social-link"
-                  >Facebook</a
+                <a
+                  href="#"
+                  class="footer__social-link"
+                  id="footer__social-link"
+                >
+                  <img
+                    src="./images/facebook_white.svg"
+                    alt="Facebook Logo"
+                    class="footer__social-icon"
+                  />
+                  Facebook</a
                 >
               </li>
               <li class="footer__list-item">
-                <img
-                  src="./images/instagram_white.svg"
-                  alt="Instagram"
-                  class="footer__social-icon"
-                />
                 <a href="#" class="footer__social-link" id="footer__social-link"
-                  >Instagram</a
+                  ><img
+                    src="./images/instagram_white.svg"
+                    alt="Instagram"
+                    class="footer__social-icon"
+                  />
+                  Instagram</a
                 >
               </li>
             </ul>
