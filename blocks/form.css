@@ -64,6 +64,10 @@
   border: none;
 }
 
+.form__button:last-of-type {
+  margin-bottom: 0;
+}
+
 .form__button:hover {
   opacity: 70%;
 }

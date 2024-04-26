@@ -5,6 +5,7 @@
   overflow: hidden;
   display: flex;
   padding: 119px 0 173px;
+  z-index: 1;
 }
 
 .about__title {
@@ -50,6 +51,7 @@
   position: absolute;
   top: -152px;
   left: -129px;
+  z-index: -1;
 }
 
 .about__circle_animation_blurred {

@@ -51,6 +51,7 @@
   height: 568px;
   right: 5px;
   top: 124px;
+  z-index: -1;
 }
 
 .header__footer {
